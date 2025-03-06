@@ -29,6 +29,11 @@ public class SmartGarage {
             owner1.displayVehicles();
             owner2.displayVehicles();
 
+            //Code to triggers the exception
+            Owner owner3 = new Owner("Seraph","Rua 789","3034567890");
+            Car car2 = new Car("Toyota","Corolla",1710,owner3,2);
+            owner3.addVehicle(car2);
+
         } catch (InvalidYearException e) {
             System.err.println("Exception: "+e.getMessage());
         }

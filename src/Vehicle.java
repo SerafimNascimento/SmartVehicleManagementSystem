@@ -13,7 +13,7 @@ abstract class Vehicle {
     // Constructor to initialize the attributes.
     Vehicle(String make, String model, int year, Owner owner) throws InvalidYearException{
         if (year < 1886) {
-            throw new InvalidYearException("Sorry, but you cannot record a vehicle from or before this year " + year + " !");
+            throw new InvalidYearException("Sorry, but you cannot record a vehicle from or before 1886 !");
         }
         setMake(make);
         setModel(model);
